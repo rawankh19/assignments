@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Complete The Information</h2>
+
+    GO TO <br> <a href="#basicInfo" >basic information</a>&nbsp;
+    <a href="#contact" >Contact </a>&nbsp;
+    <a href="#Skills" >Skills </a>&nbsp;
+    <a href="#Favorite" >Favorite </a>&nbsp;
+    <a href="#FavoriteNews" >Favorite News sites </a>&nbsp;
+    <br><br>
+    
+    
+<form method="post" action="/action_page.php" autocomplete="on">
+    <div id="basicInfo">
+  Full name:<input type="text" name="fname" required><br><br>       Age:<input type="number" name="Age"><br><br>
+  Education:<input type="text" name="Education"><br><br>
+  Select your image: 
+        <input type="file" name="img" multiple><br><br>
+ 
+  <label>Gender: </label><br>
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female" checked> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br><br>
+  
+  Birthday (date and time):
+  <input type="datetime-local" name="bdaytime"><br><br>
+        </div>
+  <div id="contact">
+       <fieldset>
+ <legend>Contact:</legend>
+  E-mail: <input type="email" name="email" autocomplete="off"><br><br>
+  Telephone:<input type="tel" name="usrtel"><br><br>
+ </fieldset>
+        </div>
+        
+
+    <hr>
+    <hr>
+    <div id="Skills">
+    Write About your Skills:<br><textarea name="Skills" rows="10" cols="30">
+        </textarea>
+        <br>
+    </div>
+    <hr>
+    <hr>
+    <div id="Favorite">
+    Write About your Favorite things:<br>
+        <textarea name="Favorite" rows="10" cols="30">
+        </textarea>
+        <br>
+    </div>
+    <hr>
+    <hr>
+    <div id="FavoriteNews">
+    Write About your Favorite News Sites:<br>
+        <textarea name="FavoriteNews" rows="10" cols="30">
+        </textarea>
+        <br>
+    </div>
+    <hr>
+    <hr>
+    
+    
+  <input type="submit" value="Submit">
+    <input type="reset">
+</form>
+
+
+</body>
+</html>
